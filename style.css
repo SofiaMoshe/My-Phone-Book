@@ -1,0 +1,92 @@
+/* Theme Name: Phone Book
+By: Sofia Moshe
+Version: 1.0
+ */
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+:root{
+    --orange-color: #fa8e3f;
+    --grey: #b8b7bc;
+    --light-grey-color: #f3f5f1;
+    --dark-blue: #020125;
+    --caribb-blue-color: #C3E0E5
+
+;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    min-height: 100vh;
+    background-color: var( --caribb-blue-color);
+}
+/* h1, h2, h3, h4{
+    color: var(--dark-blue)
+} */
+input, button{
+    outline: 0;
+    font-family: inherit;
+    font-size: 1rem;
+    border: none;
+}
+button{
+    cursor: pointer;
+}
+
+h1 {
+	color: #F96;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+    text-align:center;
+}
+.container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem auto;
+    background:#F9F9F9;
+    padding:1rem;
+}
+@media screen and (min-width:768px){
+    .container{
+        width:50%;
+ }
+}
+
+input#search-input {
+    padding: 1rem;
+    margin-top: 1rem;
+   width: 89%;
+}
+button {
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+input#name-input {
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+input#number-input {
+    padding: 1rem;
+    margin-top: 1rem;
+}
+ul#contact-list li {
+    list-style: none;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    /* text-transform: uppercase; */
+    width: 50%;
+    padding: 1rem;
+    margin-top:1rem;
+    color: var(--dark-blue);
+} 
